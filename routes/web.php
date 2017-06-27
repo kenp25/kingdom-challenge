@@ -90,3 +90,8 @@ Route::get('admin/audio/add/{id}', function (){
 });
 
 Route::post('admin/audio/add/{id}', 'ChallengeController@addAudio');
+
+
+Route::get('seven-reasons-for-loving-kingdom-challenge', function (){
+    return view('7-reasons');
+});

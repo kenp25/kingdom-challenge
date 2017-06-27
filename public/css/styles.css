@@ -107,7 +107,7 @@ ul li{
     font-weight: bolder;
 }
 .cb-slideshow li:nth-child(1) span {
-    background-image: url(../img/awesomeness.jpeg)
+    background-image: url(../img/awesomeness2.jpeg)
 }
 
 
@@ -556,12 +556,11 @@ a:hover{
 }
 
 .guest {
-    /*height: 40px;*/
     width: 100%;
     background: rgba(0,191,255, 0.1);
-    font-size: 11pt;
+    font-size: 11pt;/*
     font-family: 'PT Sans', Arial, sans-serif;
-    font-weight: bold;
+    font-weight: bold;*/
     position: relative;
     color: rgba(255,255,255,0.5);
 }
@@ -569,13 +568,13 @@ a:hover{
     padding: 0;
     margin: auto;
     alignment: center;
-    /*height: 40px;*/
+    height: 40px;
 }
 
 .guest li {
     display: inline;
     float: left;
-    padding: 0px 2px 0px 2px;
+    padding: 5px;
 }
 
 .clearfix:before,
@@ -591,10 +590,9 @@ a:hover{
 }
 
 .guest a {
-    color: rgba(255,255,255,0.9);
+    /*color: rgba(255,255,255,0.9);*/
     display: inline-block;
     text-align: center;
-    text-decoration: underline;
     line-height: 40px;
 }
 
@@ -732,14 +730,21 @@ a:hover{
 }
 
 .ui-datepicker-calendar .ui-state-active {
-    color: rgba(0,0,0,0.4);
-    border: 1px solid rgba(0,0,0,0.4);
+    color: rgba(255,255,255,0.8);
+    border: 1px solid rgba(255,255,255,0.8);
+    font-weight: 300;
+
 }
 
 .site-identity{
     background: url("../img/header.gif") center center;
-    height: 242px;
+    height: 198px;
+    font-weight: bold;
 
+}
+
+.slider{
+    height: 465px;
 }
 
 

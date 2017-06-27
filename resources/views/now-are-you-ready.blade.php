@@ -77,8 +77,16 @@
                 </div>
             </div>
             <div class="col-md-3">
+                <nav class="clearfix guest">
+                    <ul>
+                        <li><a href="{{ url('/') }}">Home</a></li>
+                        <li><a href="{{ url('auth/register') }}">Register</a></li>
+                        <li><a href="{{ url('auth/login') }}">Login</a></li>
+                    </ul>
+                </nav>
                 <div><h3>Quick Links</h3></div>
                 <ol>
+                    <li><a href="{{ url('seven-reasons-for-loving-kingdom-challenge') }}">The Top 7 Reasons Why People Love The Kingdom Challenge</a></li>
                     <li><a href="{{ url('about') }}">About the Kingdom Challenge</a></li>
                     <li><a href="{{ url('benefits-of-joining-kingdom-challenge') }}">Benefits of joining Kingdom challenge</a></li>
                     <li><a href="{{ url('consquencies') }}">The Consquences of Not being Challenged</a></li>
