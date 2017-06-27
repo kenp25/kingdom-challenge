@@ -64,7 +64,7 @@ class RegisterController extends Controller
             'email' => 'required|string|email|max:255|unique:users',
             'gender' => 'required|int',
             'address' => 'required',
-            'phone' => 'required|phone:AUTO,UG',
+            'phone' => 'required',
             'age' => 'required'
             /*'password' => 'required|string|min:6|confirmed',*/
         ]);
@@ -114,7 +114,7 @@ class RegisterController extends Controller
             DB::commit();
             return Redirect::back()->with('warning', 'Check your mail and verify your account');
         } catch (Exception $e) {
-            dd($e);
+            //dd($e);
             DB::rollback();
             return back()->with('error', 'Something went wrong try again later');
 

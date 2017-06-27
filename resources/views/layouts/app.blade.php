@@ -16,6 +16,8 @@
 </head>
 <body>
     <div id="app">
+{{--        <div class="text-center count-down bg-info">Challenge Lessons Start on 1st July, 2017</div>
+        <div class="text-center count-down bg-info"><span id="count-down"></span></div>--}}
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -29,9 +31,9 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
-                    </a>
+                    {{--                    <a class="navbar-brand" href="{{ url('/') }}">
+                                            {{ config('app.name', 'Laravel') }}
+                                        </a>--}}
 
                 </div>
 
@@ -45,40 +47,36 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ url('about') }}">About</a></li>
-                            <li><a href="{{ url('auth/login') }}">Login</a></li>
                             <li><a href="{{ url('auth/register') }}">Register</a></li>
-
+                            <li><a href="{{ url('auth/login') }}">Login</a></li>
                         @else
+                            <li>
+                                <a href="{{ url('member/welcome') }}">
+                                    Challenge Lessons
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('unleash-greatness') }}">
+                                    Unleash Greatness
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('challenge-maximization') }}">
+                                    Challenge Maximization
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('commitment-to-excellence') }}">
+                                    Commitment To Excellence
+                                </a>
+                            </li>
+
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->fullName() }} <span class="caret"></span>
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
-
-
-                                    <li>
-                                        <a href="{{ url('member/welcome') }}">
-                                            Challenge Lessons
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('unleash-greatness') }}">
-                                            Unleash Greatness
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('challenge-maximization') }}">
-                                            Challenge Maximization
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('commitment-to-excellence') }}">
-                                            Commitment To Excellence
-                                        </a>
-                                    </li>
-
                                     <li>
                                         <a href="{{ route('logout') }}"
                                            onclick="event.preventDefault();
@@ -97,14 +95,64 @@
                 </div>
             </div>
         </nav>
-        <div class="text-center count-down">Challenge Lessons Start on 1st July, 2017</div>
-        <div class="text-center count-down"><span id="count-down"></span></div>
+        <div class="site-identity"></div>
+
+{{--        @if(Auth::guest())
+            <nav class="clearfix guest container-fluid">
+                <ul class="clearfix">
+                    <li><a href="{{ url('about') }}">About the Kingdom Challenge</a> |</li>
+                    <li><a href="{{ url('benefits-of-joining-kingdom-challenge') }}">Benefits of joining Kingdom challenge</a> |</li>
+                    <li><a href="{{ url('consquencies') }}">The Consquences of Not being Challenged</a> |</li>
+                    <li><a href="{{ url('ten-benefits-of-a-challenge') }}">Ten benefits of a challenge</a> |</li>
+                    <li><a href="{{ url('now-are-you-ready') }}">Now are you ready for a challenge?</a></li>
+                </ul>
+                <a href="#" id="pull">Menu</a>
+            </nav>
+        @else
+            <nav class="clearfix guest container-fluid">
+                <ul class="clearfix">
+                    <li>
+                        <a href="{{ url('member/welcome') }}">
+                            Challenge Lessons
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url('unleash-greatness') }}">
+                            Unleash Greatness
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url('challenge-maximization') }}">
+                            Challenge Maximization
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url('commitment-to-excellence') }}">
+                            Commitment To Excellence
+                        </a>
+                    </li>
+
+                </ul>
+                <a href="#" id="pull">Menu</a>
+            </nav>
+        @endif--}}
 
         @yield('content')
     </div>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+
+    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('js/jquery-ui.min.js') }}"></script>
+    <script>
+        $('#calendar').datepicker({
+            inline: true,
+            firstDay: 1,
+            showOtherMonths: true,
+            dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+        });
+    </script>
 
     <script>
         // Set the date we're counting down to
