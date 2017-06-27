@@ -59,16 +59,21 @@ class LoginController extends Controller
 
         if (Auth::attempt(array('email' => $request->input('email'), 'password' => $request->input('password')),$request['remember']))
         {
-            if (Auth::user()->admin()){
-                return Redirect::intended('admin/welcome');
+            if (!Auth::user()->admin()){
+                if (Auth::user()->paid()){
+
+                    return Redirect::intended('member/welcome');
+                }else{
+                    Auth::logout();
+                    return Redirect::back()->with('error', "Please check that you have paid. ");
+                }
             }
 
-            if (Auth::user()->paid()){
+            return Redirect::intended('admin/welcome');
 
-                return Redirect::intended('member/welcome');
-            }else{
-                return Redirect::back()->with('error', "Please check that you have paid. ");
-            }
+
+
+
 
         }else{
             return Redirect::back()->with('error','Your username and password are wrong.');
