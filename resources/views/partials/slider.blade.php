@@ -54,7 +54,7 @@
                 </li>
 
                 <li>
-                    <span>Image 15</span><div><h2>Unleash Your</h2><h3>Indominable Spirit</h3></div>
+                    <span>Image 15</span><div><h2>Unleash Your</h2><h3>Indomitable Spirit</h3></div>
                 </li>
             </ul>
         </div>
