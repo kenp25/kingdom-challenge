@@ -97,47 +97,9 @@
         </nav>
     @endif
 
-    <div class="site-identity"></div>
-
-    {{--        @if(Auth::guest())
-                <nav class="clearfix guest container-fluid">
-                    <ul class="clearfix">
-                        <li><a href="{{ url('about') }}">About the Kingdom Challenge</a> |</li>
-                        <li><a href="{{ url('benefits-of-joining-kingdom-challenge') }}">Benefits of joining Kingdom challenge</a> |</li>
-                        <li><a href="{{ url('consquencies') }}">The Consquences of Not being Challenged</a> |</li>
-                        <li><a href="{{ url('ten-benefits-of-a-challenge') }}">Ten benefits of a challenge</a> |</li>
-                        <li><a href="{{ url('now-are-you-ready') }}">Now are you ready for a challenge?</a></li>
-                    </ul>
-                    <a href="#" id="pull">Menu</a>
-                </nav>
-            @else
-                <nav class="clearfix guest container-fluid">
-                    <ul class="clearfix">
-                        <li>
-                            <a href="{{ url('member/welcome') }}">
-                                Challenge Lessons
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ url('unleash-greatness') }}">
-                                Unleash Greatness
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ url('challenge-maximization') }}">
-                                Challenge Maximization
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ url('commitment-to-excellence') }}">
-                                Commitment To Excellence
-                            </a>
-                        </li>
-
-                    </ul>
-                    <a href="#" id="pull">Menu</a>
-                </nav>
-            @endif--}}
+    <div class="site-identity">
+        <img class="img img-responsive" src="{{ asset('img/header.gif') }}" alt="Header">
+    </div>
 
     @yield('content')
 </div>
