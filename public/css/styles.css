@@ -1,8 +1,3 @@
-/*body{
-    background: url("../img/Autumn.jpg");
-}*/
-
-
 .navbar{
     margin-bottom: 0px;
 }
@@ -136,7 +131,7 @@ ul li{
     animation-delay: 18s;
 }
 .cb-slideshow li:nth-child(5) span {
-    background-image: url(../img/dreams.jpg);
+    background-image: url(../img/Dream.jpg);
     -webkit-animation-delay: 24s;
     -moz-animation-delay: 24s;
     -o-animation-delay: 24s;
