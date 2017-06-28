@@ -97,7 +97,7 @@
         </nav>
     @endif
 
-    <div class="site-identity">
+    <div>
         <img class="img img-responsive" src="{{ asset('img/header.gif') }}" alt="Header">
     </div>
 
