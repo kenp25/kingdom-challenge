@@ -1,6 +1,6 @@
-body{
+/*body{
     background: url("../img/Autumn.jpg");
-}
+}*/
 
 
 .navbar{
@@ -463,8 +463,9 @@ ul li{
 #about{
     background: url("../img/Autumn.jpg");
     color: black;
-    margin-top: -11px;
+    /*margin-top: -11px;*/
     padding: 0px 0px 50px 0px;
+    margin-top: 0px;
 }
 
 #subsription{
