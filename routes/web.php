@@ -59,7 +59,13 @@ Route::get('/auth/verify/{token}', 'Auth\RegisterController@confirm');
 
 Auth::routes();
 
-Route::get('/member/welcome', 'HomeController@index')->name('home');
+Route::get('/member/lessons', 'HomeController@index')->name('home');
+
+Route::get('/member/welcome', function (){
+    return view('welcome');
+});
+
+
 
 Route::get('/admin/welcome', 'AdminController@index');
 

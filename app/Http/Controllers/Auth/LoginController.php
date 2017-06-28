@@ -62,7 +62,7 @@ class LoginController extends Controller
             if (!Auth::user()->admin()){
                 if (Auth::user()->paid()){
 
-                    return Redirect::intended('member/welcome');
+                    return Redirect::intended('member/lessons');
                 }else{
                     Auth::logout();
                     return Redirect::back()->with('error', "Please check that you have paid. ");

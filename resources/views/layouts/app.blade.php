@@ -49,25 +49,49 @@
                     <!-- Authentication Links -->
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="{{ url('member/welcome') }}">
+                            <a href="{{ url('member/lessons') }}">
                                 Challenge Lessons
                             </a>
                         </li>
+
+                        <li>
+                            <a href="{{ url('member/welcome') }}">
+                                Welcome
+                            </a>
+                        </li>
+
                         <li>
                             <a href="{{ url('unleash-greatness') }}">
                                 Unleash Greatness
                             </a>
                         </li>
+
                         <li>
-                            <a href="{{ url('challenge-maximization') }}">
-                                Challenge Maximization
+                            <a href="{{ url('ten-rules') }}">
+                                The Ten Rules Of The Kingdom Challenge
                             </a>
                         </li>
+
+
                         <li>
                             <a href="{{ url('commitment-to-excellence') }}">
                                 Commitment To Excellence
                             </a>
                         </li>
+
+                        <li>
+                            <a href="{{ url('now-are-you-ready') }}">
+                                Now are you ready for a challenge?
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ url('top-ten-tips') }}">
+                                Top 10 Tips For Maximizing Kingdom Challenge
+                            </a>
+                        </li>
+
+
 
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
