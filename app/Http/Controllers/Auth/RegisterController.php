@@ -114,7 +114,7 @@ class RegisterController extends Controller
             DB::commit();
             return Redirect::back()->with('warning', 'Check your mail and verify your account');
         } catch (Exception $e) {
-            //dd($e);
+            dd($e);
             DB::rollback();
             return back()->with('error', 'Something went wrong try again later');
 

@@ -52,11 +52,12 @@ class EmailChallenge extends Command
             }
 
             $challenge->where('id', $challenge->id)->update(array('sent'=>1));
+            $this->info("Email sent successfully");
         }else{
-            $this->info("Nothing to send");
+            $this->info("No Challenge to send");
         }
 
-        $this->info("Email sent successfully");
+
 
     }
 }
