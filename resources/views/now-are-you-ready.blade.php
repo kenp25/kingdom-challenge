@@ -49,10 +49,10 @@
                     <li><a href="{{ url('about') }}">About the Kingdom Challenge</a></li>
                     <li><a href="{{ url('benefits-of-joining-kingdom-challenge') }}">Fourteen Benefits Of Joining Kingdom Challenge</a></li>
                     <li><a href="{{ url('consquencies') }}">The Consquences of Not being Challenged</a></li>
-                    <li><a href="{{ url('seven-reasons-for-loving-kingdom-challenge') }}">The Top 7 Reasons Why People Love The Kingdom Challenge</a></li>
-                    <li><a href="{{ url('ten-benefits-of-a-challenge') }}">Ten benefits of a challenge</a></li>
-                    <li><a href="{{ url('now-are-you-ready') }}">Now are you ready for a challenge?</a></li>
-                    <li><a href="{{ url('auth/register') }}">Register now</a></li>
+                    <li><a href="{{ url('seven-reasons-for-loving-kingdom-challenge') }}">Top 7 Reasons Why People Love Kingdom Challenge</a></li>
+                    <li><a href="{{ url('ten-benefits-of-a-challenge') }}">The Ten Benefits of Taking on a Challenge</a></li>
+                    <li><a href="{{ url('now-are-you-ready') }}">Now Are You Ready For A Challenge?</a></li>
+                    <li><a href="{{ url('auth/register') }}">Register Now</a></li>
                 </ol>
             </div>
         </div>
