@@ -114,6 +114,6 @@ Route::get('now-are-you-ready-2', function (){
     return view('now-are-you-ready-2');
 });
 
-Route::get('admin/user/add', function (){
+Route::get('admin/user/add', ['Authorized', function (){
     return view('add_user');
-});
+}]);
