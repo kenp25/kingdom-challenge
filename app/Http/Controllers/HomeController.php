@@ -25,7 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $challenges = Challenge::all();
+        $challenges = Challenge::where('sent', 1)->get();
         return view('home', ['challenges'=> $challenges]);
     }
 }

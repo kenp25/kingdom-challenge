@@ -62,14 +62,6 @@ class ChallengeController extends Controller
                     'name' => $request['name'],
                     'video' => '/files/' . $file_name
                 ]);
-/*                $users = User::all();
-                $email = new ChallengeEmail(new Challenge($challenge->toArray()));
-
-                foreach ($users as $user){
-                    Mail::bcc($user->email)->send($email);
-                }*/
-
-
 
                 DB::commit();
                 return Redirect::back()->with('success', 'Upload successful');

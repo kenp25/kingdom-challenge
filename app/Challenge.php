@@ -10,4 +10,11 @@ class Challenge extends Model
         'day', 'name', 'video', 'audio'
     ];
 
+    public function hasBeenSent()
+    {
+        if ($this->sent == 1){
+            return true;
+        }
+    }
+
 }

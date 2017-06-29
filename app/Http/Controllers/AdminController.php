@@ -73,7 +73,7 @@ class AdminController extends Controller
             $ext = ['mp4', 'mov', 'flv', 'mpg'];
             if (in_array(Input::file('video')->getClientOriginalExtension(), $ext)) {
                 $video = Input::file('video');
-                $file_name = md5(time(5)) . '.' . $video->getClientOriginalExtension();
+                $file_name = md5(time()) . '.' . $video->getClientOriginalExtension();
                 $video->move(public_path() . '/files', $file_name);
 
                 $challenge = Challenge::create([
@@ -81,14 +81,14 @@ class AdminController extends Controller
                     'name' => $request['name'],
                     'video' => '/files/' . $file_name
                 ]);
-                $users = User::all();
+/*                $users = User::all();
                 $email = new ChallengeEmail(new Challenge($challenge->toArray()));
 
                 foreach ($users as $user){
                     Mail::bcc($user->email)->send($email);
                 }
 
-
+*/
 
                 DB::commit();
                 return Redirect::back()->with('success', 'Upload successful');
