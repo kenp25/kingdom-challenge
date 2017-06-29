@@ -109,3 +109,7 @@ Route::get('ten-rules', function (){
 Route::get('top-ten-tips', function (){
     return view('ten-tips');
 });
+
+Route::get('now-are-you-ready-2', function (){
+    return view('now-are-you-ready-2');
+});

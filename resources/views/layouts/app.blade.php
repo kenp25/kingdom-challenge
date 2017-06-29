@@ -63,7 +63,7 @@
 
                         <li>
                             <a href="{{ url('unleash-greatness') }}">
-                                Unleash Greatness
+                                Unleash Your Greatness
                             </a>
                         </li>
 
@@ -76,13 +76,13 @@
 
                         <li>
                             <a href="{{ url('commitment-to-excellence') }}">
-                                Commitment To Excellence
+                                Commitment to ExcellenceCommitment to Excellence
                             </a>
                         </li>
 
                         <li>
-                            <a href="{{ url('now-are-you-ready') }}">
-                                Now are you ready for a challenge?
+                            <a href="{{ url('now-are-you-ready-2') }}">
+                                Now Are You Ready For A Challenge?
                             </a>
                         </li>
 
