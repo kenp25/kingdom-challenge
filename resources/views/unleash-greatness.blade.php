@@ -6,75 +6,44 @@
 
 @section('content')
 <div class="container">
-    <div class="row">
-        <div>
-            <h2>Unleash your greatness</h2>
-        </div>
-
-        <div>
-            <i>“To achieve greatness, you must cultivate an indomitable spirit and enforce your will over any obstacle.” –</i><b>Julius Peter Oyet</b>
-        </div>
-        <div>
-            <b>Unleash Your Greatness</b> – An Action Guide For Peak Performance With Kingdom Challenge.
-            There are three kinds of people in the world, playing three different kinds of games:  the wills, the won’ts, and the can’ts.
-            <ol>
-                <li>
-                    <b>The wills</b>-Play to win and they accomplish much
-                </li>
-                <li><b>The won'ts</b>-Play it safe, and they accomplish little</li>
-                <li><b>The can'ts</b>-Play to lose and they accomplish nothing.</li>
-            </ol>
-            <p>
-                Which One Are You?  This Manifesto serves to inspire those who “will,” and to scare the FEAR out of the won’ts and can’ts.
-                The Power Of Will: Thee Are No Words That Are As Great & Powerful As The Words “I WILL”. There is strength, conviction, depth, solidarity, decision, focus, confidence, and sheer determination in the loud, ringing tone which punctuates their delivery.
-                The words “I WILL” send an advance message to your mind and to those within earshot.  It’s a message of triumph over adversity, of victory in the face of great resistance, of the strength, will, and personal constitution to Persevere Until The End.
-                The words “ I WON’T also send an advance message, but it’s one of resistance, opposition, excuse-making, and protective posturing.
-                The words “ I CAN’T are the worst of all, as they represent a hopeless victim mentality and are not worth another keystroke. Deep down, every human being knows that he is in this world just once as a unique entity, and that no accident, however strange, will throw together a second swing at the bat, a mulligan, a do-over.  He knows it, but hides it like a bad conscience.  WHY?
-                Fear Is A Liar. Fear!! What is it that compels people to be fearful, to think and act like part of the herd, to say I WON’T OF I CAN’T rather than I WILL?
-            </p>
-                <br/><strong>For the majority of us, it is the desire for safety, refuge, security – in short, the inclination to play it safe and remain in the comfort zone.</strong>
-
-                <p>
-                Overall, people are more fearful than they are courageous, and what they fear most are the troubles with which unconditional honesty and intellectual maturity would burden them with.
-                People hide their under-performing lives behind fear, and by doing so, they violate the greatest principle of all: the principle that every human being is a unique wonder and has beauty within that is worth bringing out.  Ultimately, every human being is capable of GREATNESS.
-                Fear is unworthy of companionship. When a person who says “I will” despises other people, it is their attitude and behavior that he despises, for he knows what is possible when one deploys the rigorous consistency of a commitment to a worthwhile goal. The human being who does not wish to belong to the masses, who dares to show the world what he is capable of creating, must cease being comfortable with himself.  He must resist the gravitation pull of the comfort zone and instead follow his conscience, which shouts at him:
-                </p>
-
-                <p>
-                    What you are presently doing is not bringing out your best! GREATNESS UNLEASHED
-                    In the words of Carl Sagan, “Who are we, if not measured by our impact on others?  We’re not who we say we are, we’re not who we want to be – we are the sum of the influence and impact that we have, in our lives, on others.” I admire “ I WILL” people, those who inspire excellence and greatness in others, for two primary reasons:  they serve as a beautiful example worth emulating, and they challenge me to become a better human being.
-                    In the pages that follow, you’re going to receive a powerful blueprint, which you can use for Unleashing Your Greatness and inspiring others through your example.  It all begins with understanding the critical nature of a challenge, its impact on human performance, and how you can dramatically alter the direction of your life!
-                </p>
-
-            <h3>Why You Need To Be Challenged</h3>
-            <i>“It’s actually pretty simple, you either rise to the challenge or you don’t”-</i><b>Julius Peter Oyet</b>
-
-            <p>
-                The human body serves as the perfect metaphor for understanding the importance of a challenge, for the simple reason that the body is built to adapt and respond to demands that are placed upon it.  The stronger the demand, the stronger the response.
-
-                Physical muscles continue to grow and strengthen through the Principle of Progressive Resistance. This principle is based on the theory that muscles must be challenged in order to upgrade and grow, and that they will progressively work to overcome a resistance force when required to do so.  The opposite is also true, as physical muscles will downgrade and weaken with the absence of a challenge.
-
-                As an example, if you simply lift the same amount of weight each time, you keep your muscles in a comfort zone and don't provide resistance force for them to adapt and grow.  Even worse, if you stop weight and resistance training altogether, all gains become losses, as muscle without challenge reverts to fat.
-
-                The Principle of Progressive Resistance operates the same way in every area of our lives, and that is why we all NEED to be challenged. And not just physically challenged.  We need intellectual, leadership, spiritual, relational, sales and any type of performance challenge that stretches us, forces us to overcome adversity, tests our character and commitment, and inspires us to say adios to our comfort zone. When will your finest hour come, and how will it arrive?  Do you really think it will materialize without a challenge, without your perseverance being tested, without you being pushed to your limits, torment, and put through your own personal hell?
-
-                In short, for an individual, team, company, community, or country to become great they must seek out and rise to the great challenges that are thrust upon them. There Is No Other Way!
-            </p>
-
-            <h3>The Rewards Of Rising To A Challenge</h3>
-
-            <p>
-                “We choose to go…not because  (it is) easy, but because (it is) hard, because that goal will serve to measure and organize the best of our energies and skills, because that challenge is one that we are willing to accept, one owe are unwilling to postpone, and one which we intend to win.”  - John Fitzgerald Kennedy on sending a man to the moon There is no purer form of success, no more exact and demanding test of what you are capable of, than to face a challenge and find joy in the capacity to meet it.
-
-                While we all have different goals and aspirations, we all love and benefit from a challenge – something that inspires us to reach the peak of our potential, jailbreaks us from our comfort zone, and transforms us into a better, far more capable version of ourselves.
-
-                The ultimate reason for setting challenging goals is to entice you to become the person it takes to ACHIEVE THEM
-                <div><i>“If you’re up to the demands of a challenging goal, you’ll find a way.  If not, you’ll find an excuse”</i>- <b>Julius Peter Oyet</b></div>
-                As you are about to find out, who you become, as well as the traits and skill sets you develop in rising to meet a challenge, are much more important than the nature of the challenge itself.
-            </p>
-        </div>
-        </div>
-    </div>
+    <p lang="en-US" align="left"><span style="color: #ff0000;"><span style="font-size: large;"><strong>UNLEASH YOUR </strong></span></span><span style="color: #ff0000;"><span style="font-size: xx-large;"><strong>GREATNESS</strong></span></span></p>
+    <p lang="en-US" align="left">&ldquo;<span style="font-size: xx-large;"><em>T</em></span><em>o achieve greatness, you must cultivate an indomitable spirit and enforce your will over any obstacle.</em>&rdquo; &ndash; <strong>Julius Peter Oyet</strong></p>
+    <p class="western" lang="en-US" align="left"><span style="color: #002060;"><strong>Unleash Your Greatness &ndash; </strong></span><span style="color: #002060;">An Action Guide For Peak Performance With</span><span style="color: #002060;"><strong> Kingdom Challenge.</strong></span></p>
+    <p class="western" lang="en-US" align="left"><strong>There are three</strong> kinds of people in this world, playing three different kinds of games: <span style="font-size: large;"><strong>The Wills, The Won&rsquo;ts, &amp; The Cant&rsquo;s.</strong></span></p>
+    <ol style="list-style-type: lower-roman;">
+        <li class="western" lang="en-US"><span style="color: #000000;"><span style="font-size: x-large;"><strong>THE &ldquo;WILLS&rdquo; </strong></span></span><span style="color: #000000;"><strong>Play to win and they accomplish much</strong></span><span style="color: #000000;">.</span></li>
+        <li lang="en-US"><span style="color: #000000;"><span style="font-size: x-large;"><strong>THE &ldquo;WONT&rsquo;S&rdquo;</strong></span><strong>Play it safe, and they accomplish little.</strong></span></li>
+        <li lang="en-US"><span style="color: #000000;"><span style="font-size: x-large;"><strong>THE &ldquo;CAN&rsquo;TS&rdquo; </strong></span><strong>Play to lose and they accomplish nothing.</strong></span></li>
+    </ol>
+    <p lang="en-US" align="left">&nbsp;<span style="color: #c00000;"><strong>Which One Are You? This Kingdom Challenge Manifesto</strong></span> serves to inspire those who &ldquo;will,&rdquo; and to scare the FEAR out of the won&rsquo;ts and can&rsquo;ts.</p>
+    <p class="western" lang="en-US" align="left">&nbsp;<span style="color: #c00000;"><strong>The Power Of Will: </strong></span>There Are No Words That Are As Great &amp; Powerful As The Words<strong> &ldquo;I WILL&rdquo;. </strong>There is strength, conviction, depth, solidarity, decision, focus, confidence, and sheer determination in the loud, ringing tone which punctuates their delivery.</p>
+    <p class="western" lang="en-US" align="left">&nbsp;The words &ldquo;<span style="color: #c00000;"><strong>I WILL</strong></span>&rdquo; send an advance message to your mind and to those within earshot. It&rsquo;s a message of triumph over adversity, of victory in the face of great resistance, of the strength, will, and personal constitution to <span style="color: #c00000;"><strong>Persevere Until The End.</strong></span></p>
+    <p class="western" lang="en-US" align="left">&nbsp;The words &ldquo; <span style="color: #c00000;"><strong>I WON&rsquo;T</strong></span> also send an advance message, but it&rsquo;s one of resistance, opposition, excuse-making, and protective posturing.</p>
+    <p class="western" lang="en-US" align="left">The words &ldquo; <span style="color: #c00000;"><strong>I CAN&rsquo;T</strong></span> are the worst of all, as they represent a hopeless victim mentality and are not worth another keystroke. Deep down, every human being knows that he is in this world just once as a unique entity, and that no accident, however strange, will throw together a second swing at the bat, a mulligan, a do-over. He knows it, but hides it like a bad conscience. <span style="color: #c00000;"><strong>WHY?</strong></span></p>
+    <p class="western" lang="en-US" align="left">&nbsp;<span style="color: #c00000;"><strong>Fear Is A Liar. Fear!! </strong></span>What is it that compels people to be fearful, to think and act like part of the herd, to say <span style="color: #c00000;"><strong>I WON&rsquo;T OF I CAN&rsquo;T</strong></span> rather than <span style="color: #c00000;"><strong>I WILL?</strong></span></p>
+    <p class="western" lang="en-US" align="left">&nbsp;<span style="color: #ff0000;"><strong><span style="font-size: large;">For the majority of us, it is the desire for safety, refuge, security &ndash; in short, the inclination to play it safe and remain in the comfort zone.</span></strong></span></p>
+    <p lang="en-US" align="left">&nbsp;Overall, people are more fearful than they are courageous, and what they fear most are the troubles with which unconditional honesty and intellectual maturity would burden them with.</p>
+    <p lang="en-US" align="left">People hide their under-performing lives behind fear, and by doing so, they violate the greatest principle of all: the principle that every human being is a unique wonder and has beauty within that is worth bringing out. Ultimately, every human being is capable of GREATNESS.</p>
+    <p class="western" lang="en-US" align="left">Fear is unworthy of companionship. When a person who says &ldquo;I will&rdquo; despises other people, it is their attitude and behavior that he despises, for he knows what is possible when one deploys the rigorous consistency of a commitment to a worthwhile goal. The human being who does not wish to belong to the masses, who dares to show the world what he is capable of creating, must cease being comfortable with himself. He must resist the gravitation pull of the comfort zone and instead follow his conscience, which shouts at him:</p>
+    <p class="western" lang="en-US" align="left">&nbsp;<span style="color: #000000;"><span style="font-size: large;"><strong>UNLEASH YOUR </strong></span><span style="font-size: xx-large;"><strong>GREATNESS</strong></span></span></p>
+    <p lang="en-US"><span style="color: #ff0000;"><strong>What you are presently doing is not bringing out your best! </strong></span><span style="color: #c00000;"><strong>GREATNESS UNLEASHED</strong></span></p>
+    <p class="western" lang="en-US" align="left">&nbsp;<strong>In the words of Carl Sagan</strong><span style="color: #c00000;"><strong>, </strong></span>&ldquo;<span style="color: #c00000;">Who are we, if not measured by our impact on others? We&rsquo;re not who we say we are, we&rsquo;re not who we want to be &ndash; we are the sum of the influence and impact that we have, in our lives, on others</span>.&rdquo; I admire &ldquo; <span style="color: #c00000;"><strong>I WILL</strong></span>&rdquo; people, those who inspire excellence and greatness in others, for two primary reasons: they serve as a beautiful example worth emulating, and they challenge me to become a better human being.</p>
+    <p class="western" lang="en-US" align="left">In the pages that follow, you&rsquo;re going to receive a powerful blueprint, which you can use for <span style="color: #c00000;"><strong>Unleashing Your Greatness</strong></span> and inspiring others through your example. It all begins with understanding the critical nature of a challenge, its impact on human performance, and how you can dramatically alter the direction of your life!</p>
+    <p class="western" lang="en-US" align="left">&nbsp;<span style="color: #c00000;"><strong>Why You Need To Be Challenged</strong></span></p>
+    <p class="western" lang="en-US" align="left"><span style="color: #000000;">&ldquo;<span style="font-size: small;"><strong><em>It&rsquo;s actually pretty simple, you either rise to the challenge or you don&rsquo;t</em>&rdquo; &ndash; Julius Peter Oyet</strong></span></span></p>
+    <p lang="en-US">The human body serves as the perfect metaphor for understanding the importance of a challenge, for the simple reason that the body is built to adapt and respond to demands that are placed upon it. The stronger the demand, the stronger the response.</p>
+    <p class="western" lang="en-US" align="left">&nbsp;Physical muscles continue to grow and strengthen through the Principle of Progressive Resistance. This principle is based on the theory that muscles must be challenged in order to upgrade and grow, and that they will progressively work to overcome a resistance force when required to do so. The opposite is also true, as physical muscles will downgrade and weaken with the absence of a challenge.</p>
+    <p class="western" lang="en-US" align="left">&nbsp;As an example, if you simply lift the same amount of weight each time, you keep your muscles in a comfort zone and don't provide resistance force for them to adapt and grow. Even worse, if you stop weight and resistance training altogether, all gains become losses, as muscle without challenge reverts to fat.</p>
+    <p class="western" lang="en-US" align="left">&nbsp;The Principle of Progressive Resistance operates the same way in every area of our lives, and that is why we all NEED to be challenged. And not just physically challenged. We need intellectual, leadership, spiritual, relational, sales and any type of performance challenge that stretches us, forces us to overcome adversity, tests our character and commitment, and inspires us to say adios to our comfort zone. When will your finest hour come, and how will it arrive? Do you really think it will materialize without a challenge, without your perseverance being tested, without you being pushed to your limits, torment, and put through your own personal hell?</p>
+    <p class="western" lang="en-US" align="left">&nbsp;In short, for an individual, team, company, community, or country to become great they must seek out and rise to the great challenges that are thrust upon them. <span style="color: #c00000;"><strong>There Is No Other Way!</strong></span></p>
+    <p class="western" lang="en-US" align="left"><span style="color: #c00000;"><strong>The Rewards Of Rising To A Challenge</strong></span></p>
+    <p class="western" lang="en-US" align="left">&nbsp;&ldquo;We choose to go&hellip;not because (it is) easy, but because (it is) hard, because that goal will serve to measure and organize the best of our energies and skills, because that challenge is one that we are willing to accept, one owe are unwilling to postpone, and one which we intend to win.&rdquo; - John Fitzgerald Kennedy on sending a man to the moon There is no purer form of success, no more exact and demanding test of what you are capable of, than to face a challenge and find joy in the capacity to meet it.</p>
+    <p class="western" lang="en-US" align="left"><span style="color: #000000;">The ultimate reason for setting challenging goals is to entice you to become the person it takes to ACHIEVE THEM</span></p>
+    <p class="western" lang="en-US" align="left"><span id="Frame8" dir="ltr"></span>While we all have different goals and aspirations, we all love and benefit from a challenge &ndash; something that inspires us to reach the peak of our potential, jailbreaks us from our comfort zone, and transforms us into a better, far more capable version of ourselves.</p>
+    <p class="western" lang="en-US" align="left">&nbsp;<span style="color: #000000;">&ldquo;<em><strong>If you&rsquo;re up to the demands of a challenging goal, you&rsquo;ll find a way. If not, you&rsquo;ll find an excuse</strong></em>&rdquo; &ndash; <strong>Julius Peter Oyet</strong></span></p>
+    <p class="western" lang="en-US" align="left"><span id="Frame9" dir="ltr"></span>As you are about to find out, who you become, as well as the traits and skill sets you develop in rising to meet a challenge, are much more important than the nature of the challenge itself.</p>
+    <p class="western" lang="en-US" align="left">&nbsp;<span style="font-family: 'Arial Narrow', serif;">Until we talk again, keep growing strong, big and never forget; Wisdom Is The Principle Thing!</span></p>
+    <p class="western" lang="en-US" align="left">&nbsp;</p>
 
 </div>
     @include('partials.footer')

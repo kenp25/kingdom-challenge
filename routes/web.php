@@ -101,3 +101,11 @@ Route::post('admin/audio/add/{id}', 'ChallengeController@addAudio');
 Route::get('seven-reasons-for-loving-kingdom-challenge', function (){
     return view('7-reasons');
 });
+
+Route::get('ten-rules', function (){
+    return view('ten-rules');
+});
+
+Route::get('top-ten-tips', function (){
+    return view('ten-tips');
+});
