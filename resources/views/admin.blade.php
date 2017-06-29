@@ -10,7 +10,7 @@
             <div class="col-md-10 {{--col-md-offset-2--}}">
                 <div>
                     <div class="panel panel-default">
-                        <div class="panel-heading">Users</div>
+                        <div class="panel-heading">Users <span class="pull-right"><a href="{{ url('admin/user/add') }}">Add User</a></span></div>
 
                         <div class="panel-body">
                             <div class="table-responsive">
