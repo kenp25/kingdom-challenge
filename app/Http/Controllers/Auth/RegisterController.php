@@ -63,10 +63,13 @@ class RegisterController extends Controller
             'lastname' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'gender' => 'required|int',
+            'admin'=> 'required|int',
+            'paid'=> 'required|int',
             'address' => 'required',
             'phone' => 'required',
-            'age' => 'required'
-            /*'password' => 'required|string|min:6|confirmed',*/
+            'age' => 'required',
+            'password' => 'required|string|min:6|confirmed',
+            'password_confirmation' => 'required|string|min:6'
         ]);
     }
 
@@ -88,7 +91,8 @@ class RegisterController extends Controller
             'age' => $data['age'],
             'address' => $data['address'],
             'phone' => $data['phone'],
-            'email_token' => str_random(30)
+            'email_token' => str_random(30),
+            'password' => Hash::make($data['password'])
 
         ]);
     }
@@ -99,7 +103,7 @@ class RegisterController extends Controller
         $validator = $this->validator($request->all());
         if ($validator->fails()) {
             //$this->throwValidationException($request, $validator);
-            return Redirect::back()->withInput()->withErrors($validator);
+            return back()->withInput()->withErrors($validator);
         }
 
         // Using database transactions is useful here because stuff happening is actually a transaction
@@ -110,7 +114,7 @@ class RegisterController extends Controller
             $user = $this->create($request->all());
             // After creating the user send an email with the random token generated in the create method above
             $email = new EmailVerification(new User($user->toArray()));
-            Mail::to($user->email)->send($email);
+            //Mail::to($user->email)->send($email);
             DB::commit();
             return Redirect::back()->with('warning', 'Check your mail and verify your account');
         } catch (Exception $e) {
@@ -128,6 +132,9 @@ class RegisterController extends Controller
         // The verified method has been added to the user model and chained here
         // for better readability
         $user = User::where('email_token',$token)->firstOrFail();
+        if (!$user){
+            abort(404);
+        }
         $user->verified();
         return redirect('auth/password/'.$user->id);
     }
