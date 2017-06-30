@@ -51,7 +51,7 @@ class AdminController extends Controller
                 'paid' => $request['paid']
             ]);
 
-        return Redirect::back()->with('message', "Successfully updated user.");
+        return Redirect::to('admin/welcome')->with('message', "Successfully updated user.");
 
     }
 
