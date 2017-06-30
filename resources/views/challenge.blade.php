@@ -11,29 +11,18 @@
 
 
         <div class="col-md-9">
-            @if(count($challenge))
-
-                @if(!$challenge->hasBeenSent())
-                    <h1 class="text-center text-capitalize">You Cannot Watch This Video</h1>
-                @endif
-
-                    <div>
-                        <h4>{{"Day ". $challenge->day . " ". $challenge->name }}</h4>
-                    </div>
-                    <video controls style="width: 100%;" autoplay preload = "auto" controlsList="nodownload">
-                        <source src="{{ url($challenge->video) }}" type="video/mp4">
-                        <source src="{{ url($challenge->video) }}" type="video/ogg">
-                        Your browser does not support the video tag.
-                    </video>
-
+            @if($challenge->hasBeenSent())
+                <div>
+                    <h4>{{"Day ". $challenge->day . " ". $challenge->name }}</h4>
+                </div>
+                <video controls style="width: 100%;" autoplay preload = "auto">
+                    <source src="{{ url($challenge->video) }}" type="video/mp4">
+                    <source src="{{ url($challenge->video) }}" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            @else
+                <h1>You cannot Watch This Video Now</h1>
             @endif
-
-            @if(!count($challenge))
-                 <h1 class="text-center text-capitalize">Video Not Available</h1>
-            @endif
-
-
-
 
         </div>
         <div class="col-md-3">

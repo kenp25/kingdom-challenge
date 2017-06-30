@@ -99,8 +99,8 @@ class ChallengeController extends Controller
         if (!$challenges)
             abort(404);
         $challenge = Challenge::find($id);
-/*        if (!$challenge->hasBeenSent())
-            abort(404);*/
+        if (!$challenge)
+            abort(404);
         return view('challenge', ['challenge' => $challenge, 'challenges'=> $challenges]);
 
     }
