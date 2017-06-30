@@ -15,6 +15,8 @@ class Challenge extends Model
         if ($this->sent == 1){
             return true;
         }
+
+        return false;
     }
 
 }
