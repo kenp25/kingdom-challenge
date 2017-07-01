@@ -27,7 +27,7 @@
                 <div class="form">
 
                     <div class="form-header"><h3>Register a User</h3></div>
-                    <form action="{{ url('auth/register') }}" class="form-body" method="post">
+                    <form action="" class="form-body" method="post">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <div class="row">
                             <div class="col-md-6">

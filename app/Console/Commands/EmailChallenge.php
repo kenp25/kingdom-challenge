@@ -44,18 +44,20 @@ class EmailChallenge extends Command
     {
         $users = User::all();
         $challenge = Challenge::where('sent', 0)->first();
+        foreach ($users as $user){
 
-        if ($challenge){
-            $email = new ChallengeEmail(new Challenge($challenge->toArray()));
-            foreach ($users as $user){
+            if ($challenge){
+                $email = new ChallengeEmail(new Challenge($challenge->toArray()));
                 Mail::bcc($user->email)->send($email);
+                $this->info("Email sent successfully");
+                $challenge->where('id', $challenge->id)->update(array('sent'=>1));
+            }else{
+                $this->info("Nothing to send");
             }
-
-            $challenge->where('id', $challenge->id)->update(array('sent'=>1));
-            $this->info("Email sent successfully");
-        }else{
-            $this->info("No Challenge to send");
         }
+
+
+
 
 
 

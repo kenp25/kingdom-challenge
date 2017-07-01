@@ -117,3 +117,5 @@ Route::get('now-are-you-ready-2', function (){
 Route::get('admin/user/add', function (){
     return view('add_user');
 })->middleware('authorized', 'admin');
+
+Route::post('admin/user/add', 'AdminController@userAdd');

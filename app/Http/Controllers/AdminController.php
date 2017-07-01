@@ -8,6 +8,7 @@ use App\Subscriber;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
@@ -81,14 +82,6 @@ class AdminController extends Controller
                     'name' => $request['name'],
                     'video' => '/files/' . $file_name
                 ]);
-/*                $users = User::all();
-                $email = new ChallengeEmail(new Challenge($challenge->toArray()));
-
-                foreach ($users as $user){
-                    Mail::bcc($user->email)->send($email);
-                }
-
-*/
 
                 DB::commit();
                 return Redirect::back()->with('success', 'Upload successful');
@@ -107,6 +100,46 @@ class AdminController extends Controller
     public function store(Request $request)
     {
         return view('add_challenge');
+    }
+
+    public function userAdd(Request $request)
+    {
+
+        $validator = Validator::make($request->all(), [
+            'firstname' => 'required|string|max:255',
+            'lastname' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'gender' => 'required|int',
+            'admin' => 'required|int',
+            'paid' => 'required|int',
+            'address' => 'required',
+            'phone' => 'required',
+            'age' => 'required',
+            'password' => 'required|string|min:6|confirmed',
+            'password_confirmation' => 'required|string|min:6'
+        ]);
+
+        if ($validator->fails()){
+            return Redirect::back()->withErrors($validator)->withInput();
+        }
+
+        User::create([
+            'firstname' => $request['firstname'],
+            'lastname' => $request['lastname'],
+            'email' => $request['email'],
+            'gender' => $request['gender'],
+            'age' => $request['age'],
+            'address' => $request['address'],
+            'phone' => $request['phone'],
+            'paid' => $request['paid'],
+            'admin' => $request['admin'],
+            'email_token' => str_random(30),
+            'password' => Hash::make($request['password'])
+
+        ]);
+
+        return Redirect::to('admin/welcome')->with('message', "Successfully created user");
+
     }
 
 }

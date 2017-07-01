@@ -33,8 +33,7 @@ class EmailVerification extends Mailable
     {
         return $this
             ->subject('Please verify your email')
-            ->view('emails.verification')/*
-            ->with(['email_token'=>$this->user->email_token, 'name'=> $this->user->fullName(),'password'=>$this->user->password])*/
+            ->view('emails.verification')
             ->from('verify@kingdomchallenge.net', 'Kingdom Challenge');
     }
 }

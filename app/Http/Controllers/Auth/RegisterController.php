@@ -63,13 +63,13 @@ class RegisterController extends Controller
             'lastname' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'gender' => 'required|int',
-            'admin'=> 'required|int',
-            'paid'=> 'required|int',
+/*            'admin'=> 'required|int',
+            'paid'=> 'required|int',*/
             'address' => 'required',
             'phone' => 'required',
             'age' => 'required',
-            'password' => 'required|string|min:6|confirmed',
-            'password_confirmation' => 'required|string|min:6'
+/*            'password' => 'required|string|min:6|confirmed',
+            'password_confirmation' => 'required|string|min:6'*/
         ]);
     }
 
@@ -92,7 +92,6 @@ class RegisterController extends Controller
             'address' => $data['address'],
             'phone' => $data['phone'],
             'email_token' => str_random(30),
-            'password' => Hash::make($data['password'])
 
         ]);
     }
@@ -114,7 +113,7 @@ class RegisterController extends Controller
             $user = $this->create($request->all());
             // After creating the user send an email with the random token generated in the create method above
             $email = new EmailVerification(new User($user->toArray()));
-            //Mail::to($user->email)->send($email);
+            Mail::to($user->email)->send($email);
             DB::commit();
             return Redirect::back()->with('warning', 'Check your mail and verify your account');
         } catch (Exception $e) {
