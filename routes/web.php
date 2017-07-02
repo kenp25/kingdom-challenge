@@ -14,6 +14,8 @@ Route::get('/challenge', function () {
 
 Route::get('challenge/{id}', 'ChallengeController@show');
 
+Route::get('challenge/audio/{id}', 'ChallengeController@playAudio');
+
 Route::get('/auth/login', function () {
     return view('auth.login');
 });

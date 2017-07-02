@@ -43,7 +43,7 @@
             <ol>
                 @foreach($challenges as $challenge)
                     @if($challenge->audio)
-                        <li><a href="{{ url($challenge->audio) }}" download="{{ "Day ".$challenge->day. " ". $challenge->name }}">{{"Day ".$challenge->day. " ".$challenge->name}}</a></li>
+                        <li><a href="{{ url('challenge/audio', $challenge->day) }}">{{"Day ".$challenge->day. " ".$challenge->name}}</a></li>
                     @else
                         <li>{{ "Day ". $challenge->day }} Audio not available</li>
                     @endif

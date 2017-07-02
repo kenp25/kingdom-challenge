@@ -161,4 +161,16 @@ class ChallengeController extends Controller
 
 
     }
+
+    public function playAudio(Request $request, $id)
+    {
+        $challenges = Challenge::where('sent', 1)->get();
+        if (!$challenges)
+            abort(404);
+        $challenge = Challenge::find($id);
+        if (!$challenge)
+            abort(404);
+        return view('challenge-audio', ['challenge' => $challenge, 'challenges'=> $challenges]);
+
+    }
 }
