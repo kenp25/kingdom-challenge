@@ -27,7 +27,7 @@ class SubscriberController extends Controller
     public function create(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'name' => 'required|max:255',
+            'name' => 'required|alpha|max:255',
             'email' => 'required|email|unique:subscribers'
 
         ]);
