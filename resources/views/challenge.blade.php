@@ -7,21 +7,18 @@
             @else
             Nothing to show
             @endif--}}
-
-
-
         <div class="col-md-9">
             @if($challenge->hasBeenSent())
                 <div>
                     <h4>{{"Day ". $challenge->day . " ". $challenge->name }}</h4>
                 </div>
-                <video controls style="width: 100%;" autoplay preload = "auto" controlsList="nodownload">
+                <video controls style="width: 100%;" autoplay preload="auto" controlsList="nodownload">
                     <source src="{{ url($challenge->video) }}" type="video/mp4">
                     <source src="{{ url($challenge->video) }}" type="video/ogg">
                     Your browser does not support the video tag.
                 </video>
             @else
-                <h1>You cannot Watch This Video Now</h1>
+                <h1>You cannot Watch This Video Now.</h1>
             @endif
 
         </div>
