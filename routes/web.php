@@ -1,6 +1,11 @@
 <?php
 
 use App\Forum;
+use App\User;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Validator;
 
 Route::get('/', function () {
     if(Auth::user()){
@@ -122,4 +127,34 @@ Route::get('today', 'ChallengeController@Today');
 Route::get('forum', function (){
     $forums = Forum::with('user')->get();
     return response()->json($forums);
+});
+
+Route::get('change-password', function (){
+    return view('change-password');
+});
+
+Route::post('change-password', function (){
+    $inputs = Input::all();
+    $validity = Validator::make($inputs, [
+        'current_password' => 'Required',
+        'password' => 'Required|Confirmed',
+        'password_confirmation'=>'Required',
+    ]);
+
+    if ($validity->fails()){
+        return back()->withErrors($validity);
+    }else{
+        if(Hash::check($inputs['current_password'], Auth::user()->getAuthPassword())){
+            User::where('id', Auth::user()->id)->update(array(
+                'password' => Hash::make($inputs['password'])
+            ));
+
+            return back()
+                ->with('success', 'Password changed successfully.');
+
+        } else {
+            return Redirect::to('change_password')
+                ->with('error', 'Your current password is incorrect.');
+        }
+    }
 });
