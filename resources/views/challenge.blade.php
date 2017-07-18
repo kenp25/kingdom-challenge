@@ -10,7 +10,7 @@
         <div class="col-md-9">
             @if($challenge->hasBeenSent())
                 <div>
-                    <h4>{{"Day ". $challenge->day . " ". $challenge->name }}</h4>
+                    <h4>{{"Day ". $challenge->day . " | ". $challenge->name }}</h4>
                 </div>
                 <video controls style="width: 100%;" autoplay preload="auto" controlsList="nodownload">
                     <source src="{{ url($challenge->video) }}" type="video/mp4">
