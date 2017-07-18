@@ -1,15 +1,12 @@
 <?php
 
-//use Illuminate\Support\Facades\Auth;
+use App\Forum;
 
 Route::get('/', function () {
     if(Auth::user()){
-        return \Illuminate\Support\Facades\Redirect::to('member/welcome');
+        return Redirect::to('member/welcome');
     }
     return view('index');
-});
-
-Route::get('/challenge', function () {
 });
 
 Route::get('challenge/{id}', 'ChallengeController@show');
@@ -67,8 +64,6 @@ Route::get('/member/welcome', function (){
     return view('welcome');
 });
 
-
-
 Route::get('/admin/welcome', 'AdminController@index');
 
 Route::get('admin/challenge/add', 'AdminController@store');
@@ -121,3 +116,10 @@ Route::get('admin/user/add', function (){
 })->middleware('authorized', 'admin');
 
 Route::post('admin/user/add', 'AdminController@userAdd');
+
+Route::get('today', 'ChallengeController@Today');
+
+Route::get('forum', function (){
+    $forums = Forum::with('user')->get();
+    return response()->json($forums);
+});

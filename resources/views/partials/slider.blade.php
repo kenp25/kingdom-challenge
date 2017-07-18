@@ -59,11 +59,6 @@
             </ul>
         </div>
         <div class="col-md-3">
-{{--            @if (Auth::guest())
-
-
-
-            @endif--}}
             <nav class="clearfix guest">
                 <ul>
                     <li><a href="{{ url('/') }}">Home</a></li>

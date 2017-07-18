@@ -17,18 +17,15 @@
                             </div>
                         </div>
                     </div>
-
-
                 </a>
 
             @endforeach
-
-
-
         @else
             <div>No Challenges Yet</div>
 
         @endif
     </div>
 </div>
+
+    @include('partials.footer')
 @endsection

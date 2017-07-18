@@ -32,12 +32,6 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-
-                    <!-- Branding Image -->
-                    {{--                    <a class="navbar-brand" href="{{ url('/') }}">
-                                            {{ config('app.name', 'Laravel') }}
-                                        </a>--}}
-
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -50,8 +44,8 @@
                     <!-- Authentication Links -->
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="{{ url('member/lessons') }}">
-                                Challenge Lessons
+                            <a href="{{ url('today') }}">
+                                Today's lesson
                             </a>
                         </li>
 
@@ -61,46 +55,55 @@
                             </a>
                         </li>
 
-                        <li>
-                            <a href="{{ url('unleash-greatness') }}">
-                                Unleash Your Greatness
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="{{ url('ten-rules') }}">
-                                The Ten Rules Of The Kingdom Challenge
-                            </a>
-                        </li>
-
-
-                        <li>
-                            <a href="{{ url('commitment-to-excellence') }}">
-                                Commitment to ExcellenceCommitment to Excellence
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="{{ url('now-are-you-ready-2') }}">
-                                Now Are You Ready For A Challenge?
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="{{ url('top-ten-tips') }}">
-                                Top 10 Tips For Maximizing Kingdom Challenge
-                            </a>
-                        </li>
-
-
-
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-expanded="false">
-                                {{ Auth::user()->fullName() }} <span class="caret"></span>
+                                Navigation <span class="caret"></span>
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="{{ url('member/lessons') }}">
+                                        Challenge Lessons
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ url('unleash-greatness') }}">
+                                        Unleash Your Greatness
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="{{ url('ten-rules') }}">
+                                        The Ten Rules Of The Kingdom Challenge
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a href="{{ url('commitment-to-excellence') }}">
+                                        Commitment to ExcellenceCommitment to Excellence
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="{{ url('now-are-you-ready-2') }}">
+                                        Now Are You Ready For A Challenge?
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="{{ url('top-ten-tips') }}">
+                                        Top 10 Tips For Maximizing Kingdom Challenge
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="{{ url('partner') }}">
+                                        Accountability Partner
+                                    </a>
+                                </li>
+
                                 <li>
                                     <a href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
@@ -115,6 +118,12 @@
                                 </li>
                             </ul>
                         </li>
+
+                        <li>
+                            <a>Hello, {{ Auth::user()->fullName() }}</a>
+                        </li>
+
+
                     </ul>
 
                 </div>
@@ -142,7 +151,6 @@
         dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
     });
 </script>
-
 
 
 </body>

@@ -95,7 +95,7 @@ class ChallengeController extends Controller
      */
     public function show($id)
     {
-        $challenges = Challenge::where('sent', 1)->get();
+        $challenges = Challenge::where('sent', 1)->simplePaginate(5);
         if (!$challenges)
             abort(404);
         $challenge = Challenge::find($id);
@@ -142,6 +142,14 @@ class ChallengeController extends Controller
 
     public function addAudio($id, Request $request)
     {
+        $validity = Validator::make($request->all(), [
+            'audio' => 'required'
+
+        ]);
+
+        if ($validity->fails()){
+            return back()->withErrors($validity);
+        }
         $challenge = Challenge::find($id);
 
         $ext = ['mp3', 'wma'];
@@ -172,5 +180,12 @@ class ChallengeController extends Controller
             abort(404);
         return view('challenge-audio', ['challenge' => $challenge, 'challenges'=> $challenges]);
 
+    }
+
+    public function Today()
+    {
+        $challenge = Challenge::where('sent', 1)->get()->last();
+        return view('today', ['challenge' => $challenge]);
+        //dd($challenge);
     }
 }

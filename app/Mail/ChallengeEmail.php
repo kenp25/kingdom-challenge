@@ -34,7 +34,7 @@ class ChallengeEmail extends Mailable
     public function build()
     {
         return $this->view('emails.challenge', ['challenge'=> $this->challenge])
-            ->subject("Day ".$this->challenge->day. " " . $this->challenge->name);
+            ->subject("Day ".$this->challenge->day. " | " . $this->challenge->name);
 
 
 

@@ -33,6 +33,8 @@
                 @endforeach
             </ol>
 
+            {{ $challenges->links() }}
+
             <div>
                 <h4>Challenge Audios</h4>
             </div>
@@ -48,6 +50,8 @@
 
 
             </ol>
+
+            {{ $challenges->links() }}
 
 
         </div>
