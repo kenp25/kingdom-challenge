@@ -125,8 +125,7 @@ Route::post('admin/user/add', 'AdminController@userAdd');
 Route::get('today', 'ChallengeController@Today');
 
 Route::get('forum', function (){
-    $forums = Forum::with('user')->get();
-    return response()->json($forums);
+    return view('forum');
 });
 
 Route::get('change-password', function (){
@@ -157,4 +156,8 @@ Route::post('change-password', function (){
                 ->with('error', 'Your current password is incorrect.');
         }
     }
+});
+
+Route::get('aar', function (){
+	return view('aar');
 });

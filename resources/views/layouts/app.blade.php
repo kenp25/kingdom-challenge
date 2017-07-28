@@ -74,6 +74,18 @@
                                 </li>
 
                                 <li>
+                                    <a href="{{ url('forum') }}">
+                                        Achiever's Forum
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="{{ url('aar') }}">
+                                        After Action Review
+                                    </a>
+                                </li>
+
+                                <li>
                                     <a href="{{ url('ten-rules') }}">
                                         The Ten Rules Of The Kingdom Challenge
                                     </a>
