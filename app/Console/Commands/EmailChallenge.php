@@ -48,7 +48,7 @@ class EmailChallenge extends Command
 
             if ($challenge){
                 $email = new ChallengeEmail(new Challenge($challenge->toArray()));
-                Mail::bcc($user->email)->send($email);
+                Mail::to($user->email, $user->fullName())->send($email);
                 $this->info("Email sent to " . $user->email . " successfully");
                 $challenge->where('id', $challenge->id)->update(array('sent'=>1));
             }else{
