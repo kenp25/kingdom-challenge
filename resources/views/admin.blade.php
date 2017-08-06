@@ -151,6 +151,9 @@
 
             <div class="col-md-2">
                 <div>
+                    <h3><a href="{{url('email-challenge')}}" class="btn btn-default">Send Emails</a></h3>
+                </div>
+                <div>
                     <h3>Links</h3>
                 </div>
                 <ol>

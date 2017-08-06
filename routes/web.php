@@ -28,6 +28,14 @@ Route::get('auth/password/{user}', function () {
 
 Route::post('auth/password/{user}', 'PasswordController@create');
 
+Route::get('email-challenge', function (){
+    $success = Artisan::call('email:challenge');
+
+    return Redirect::to('admin/welcome')->with('success', 'Successfully sent emails.');
+
+
+});
+
 
 
 Route::get('/auth/register', function () {
