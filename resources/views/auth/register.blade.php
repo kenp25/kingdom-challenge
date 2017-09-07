@@ -91,6 +91,7 @@
                         </div>
 
                         <button type="submit" class="btn btn-success">Register</button>
+                        <a href="https://ug.ubillsafrica.com/r/kingdomservices" class="btn btn-info">Make Payment</a>
 
                     </form>
 
