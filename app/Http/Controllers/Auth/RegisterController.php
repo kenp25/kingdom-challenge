@@ -115,8 +115,8 @@ class RegisterController extends Controller
             $email = new EmailVerification(new User($user->toArray()));
             Mail::to($user->email)->send($email);
             DB::commit();
-            //return Redirect::back()->with('warning', 'Check your mail and verify your account');
-            return Redirect::to('https://ug.ubillsafrica.com/r/kingdomservices');
+            return Redirect::back()->with('warning', 'Check your mail and verify your account');
+            //return Redirect::to('https://ug.ubillsafrica.com/r/kingdomservices');
         } catch (Exception $e) {
             dd($e);
             DB::rollback();
