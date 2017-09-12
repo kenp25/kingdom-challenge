@@ -17,7 +17,7 @@
 </head>
 <body>
 <div id="app">
-    <div class="text-center count-down bg-info">Enrollment Start on 22nd september, 2017</div>
+    <div class="text-center count-down bg-info">Lessons Start on 22nd september, 2017</div>
     <div class="text-center count-down bg-info"><span id="count-down"></span></div>
     @if(Auth::user())
         <nav class="navbar navbar-default navbar-static-top">
