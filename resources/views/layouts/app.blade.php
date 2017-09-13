@@ -173,8 +173,9 @@
         </nav>
     @endif
 
-    <div>
-        <img class="img img-responsive" src="{{ asset('img/header.gif') }}" alt="Header">
+    <div {{--class="logo-header"--}}>
+        {{--<img class="img img-responsive" src="{{ asset('img/header.gif') }}" alt="Header">--}}
+        <img class="img img-responsive" src="{{ asset('img/logo-4.png') }}" alt="Header">
     </div>
 
     @yield('content')
