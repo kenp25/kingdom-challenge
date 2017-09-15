@@ -19,6 +19,12 @@
 <div id="app">
     <div class="text-center count-down bg-info">Lessons Start on 22nd September, 2017</div>
     <div class="text-center count-down bg-info"><span id="count-down"></span></div>
+
+    <div {{--class="logo-header"--}}>
+        {{--<img class="img img-responsive" src="{{ asset('img/header.gif') }}" alt="Header">--}}
+        <img class="img img-responsive" src="{{ asset('img/logo-4.png') }}" alt="Header">
+    </div>
+
     @if(Auth::user())
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
@@ -55,11 +61,15 @@
                             </a>
                         </li>
 
+
+
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-expanded="false">
                                 Navigation <span class="caret"></span>
                             </a>
+
+
 
                             <ul class="dropdown-menu" role="menu">
                                 <li>
@@ -129,6 +139,7 @@
                                     </form>
                                 </li>
                             </ul>
+
                         </li>
 
                         <li class="dropdown">
@@ -161,9 +172,9 @@
 
 
 
-{{--                        <li>
-                            <a>Hello, {{ Auth::user()->fullName() }}</a>
-                        </li>--}}
+                        {{--                        <li>
+                                                    <a>Hello, {{ Auth::user()->fullName() }}</a>
+                                                </li>--}}
 
 
                     </ul>
@@ -172,11 +183,70 @@
             </div>
         </nav>
     @endif
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
 
-    <div {{--class="logo-header"--}}>
-        {{--<img class="img img-responsive" src="{{ asset('img/header.gif') }}" alt="Header">--}}
-        <img class="img img-responsive" src="{{ asset('img/logo-4.png') }}" alt="Header">
-    </div>
+                <!-- Collapsed Hamburger -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#app-navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                <!-- Left Side Of Navbar -->
+                <ul class="nav navbar-nav">
+                    &nbsp;
+                </ul>
+
+                <ul class="nav navbar-nav text-center{{--navbar-right--}}">
+                    <li>
+                        <a href="#">
+                            100 Days challenge
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Business startup challenge
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Business Growth Challenge
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Weight loss and management
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Self discovery challenge
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Saving and Investment challenge
+                        </a>
+                    </li>
+
+                    <li><a href="{{ url('auth/register') }}">Register</a></li>
+                    <li><a href="{{ url('auth/login') }}">Login</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
 
     @yield('content')
 </div>
@@ -216,8 +286,8 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Display the result in the element with id="demo"
-        document.getElementById("count-down").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
+        document.getElementById("count-down").innerHTML = days + "Days " + hours + "Hours "
+            + minutes + "Minutes " + seconds + "Seconds ";
 
         // If the count down is finished, write some text
         if (distance < 0) {

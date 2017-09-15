@@ -59,13 +59,13 @@
             </ul>
         </div>
         <div class="col-md-3">
-            <nav class="clearfix guest">
+{{--            <nav class="clearfix guest">
                 <ul>
                     <li><a href="{{ url('/') }}">Home</a></li>
                     <li><a href="{{ url('auth/register') }}">Register</a></li>
                     <li><a href="{{ url('auth/login') }}">Login</a></li>
                 </ul>
-            </nav>
+            </nav>--}}
 
             <div><h3>Quick Links</h3></div>
             <ol>
