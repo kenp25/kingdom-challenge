@@ -15,16 +15,21 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 </head>
-<body>
-<div id="app">
-    <div class="text-center count-down bg-info">Lessons Start on 22nd September, 2017</div>
-    <div class="text-center count-down bg-info"><span id="count-down"></span></div>
+<body background=""text="blue" Alink="purple"link="red"vlink="green">
+<div class="container" style="background-color:brown;">
+<header id="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <img class="img img-responsive" src="{{ asset('img/logo-4.png') }}" alt="Header">
+            </div>
 
-    <div {{--class="logo-header"--}}>
-        {{--<img class="img img-responsive" src="{{ asset('img/header.gif') }}" alt="Header">--}}
-        <img class="img img-responsive" src="{{ asset('img/logo-4.png') }}" alt="Header">
+        </div>
     </div>
 
+
+</header>
+</div>
     @if(Auth::user())
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
@@ -170,13 +175,6 @@
                         </li>
 
 
-
-
-                        {{--                        <li>
-                                                    <a>Hello, {{ Auth::user()->fullName() }}</a>
-                                                </li>--}}
-
-
                     </ul>
 
                 </div>
@@ -197,54 +195,13 @@
                 </button>
             </div>
 
-            <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                <!-- Left Side Of Navbar -->
-                <ul class="nav navbar-nav">
-                    &nbsp;
-                </ul>
+            <ul class="nav navbar-nav nav-pills">
+                <li class="active"><a href="{{ url('/') }}">Home</a></li>
+                <li class="active"><a href="{{ url('about') }}">About Us</a></li>
+                <li class="active"><a href="{{ url('auth/register') }}">Register</a></li>
+                <li class="active"><a href="{{ 'auth/login' }}">Login</a></li>
+            </ul>
 
-                <ul class="nav navbar-nav text-center{{--navbar-right--}}">
-                    <li>
-                        <a href="#">
-                            100 Days challenge
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Business startup challenge
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Business Growth Challenge
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Weight loss and management
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Self discovery challenge
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Saving and Investment challenge
-                        </a>
-                    </li>
-
-                    <li><a href="{{ url('auth/register') }}">Register</a></li>
-                    <li><a href="{{ url('auth/login') }}">Login</a></li>
-                </ul>
-
-            </div>
         </div>
     </nav>
 

@@ -169,3 +169,39 @@ Route::post('change-password', function (){
 Route::get('aar', function (){
 	return view('aar');
 });
+
+Route::get('100-days-challenge', function (){
+    return view('challenges.100-days');
+});
+
+Route::get('weight-loss-management', function (){
+    return view('challenges.weight-loss');
+});
+
+Route::get('mountain-climbing', function (){
+    return view('challenges.mountain');
+});
+
+Route::get('extreme-sports', function (){
+    return view('challenges.extreme');
+});
+
+Route::get('self-discovery', function (){
+    return view('challenges.self-discovery');
+});
+
+Route::get('business-startup', function (){
+    return view('challenges.business-startup');
+});
+
+Route::get('business-breakthrough', function (){
+    return view('challenges.business-breakthrough');
+});
+
+Route::get('mentorship', function (){
+    return view('challenges.mentorship');
+});
+
+Route::get('savings', function (){
+    return view('challenges.savings');
+});

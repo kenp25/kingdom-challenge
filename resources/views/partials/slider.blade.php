@@ -1,6 +1,19 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-3">
+            <h3>Quick Links</h3>
+            <ol>
+                <li><a href="{{ url('about') }}">About the Kingdom Challenge</a></li>
+                <li><a href="{{ url('benefits-of-joining-kingdom-challenge') }}">Fourteen Benefits Of Joining Kingdom Challenge</a></li>
+                <li><a href="{{ url('consquencies') }}">The Consquences of Not being Challenged</a></li>
+                <li><a href="{{ url('seven-reasons-for-loving-kingdom-challenge') }}">The Top 7 Reasons Why People Love The Kingdom Challenge</a></li>
+                <li><a href="{{ url('ten-benefits-of-a-challenge') }}">Ten benefits of a challenge</a></li>
+                <li><a href="{{ url('now-are-you-ready') }}">Now are you ready for a challenge?</a></li>
+                <li><a href="{{ url('auth/register') }}">Register now</a></li>
+            </ol>
+
+        </div>
+        <div class="col-md-6">
             <ul class="cb-slideshow slider">
                 <li>
                     <span>Image 01</span><div><h2>Unleash Your</h2><h3>Awesomeness</h3></div>
@@ -59,30 +72,18 @@
             </ul>
         </div>
         <div class="col-md-3">
-{{--            <nav class="clearfix guest">
-                <ul>
-                    <li><a href="{{ url('/') }}">Home</a></li>
-                    <li><a href="{{ url('auth/register') }}">Register</a></li>
-                    <li><a href="{{ url('auth/login') }}">Login</a></li>
-                </ul>
-            </nav>--}}
-
-            <div><h3>Quick Links</h3></div>
             <ol>
-                <li><a href="{{ url('about') }}">About the Kingdom Challenge</a></li>
-                <li><a href="{{ url('benefits-of-joining-kingdom-challenge') }}">Fourteen Benefits Of Joining Kingdom Challenge</a></li>
-                <li><a href="{{ url('consquencies') }}">The Consquences of Not being Challenged</a></li>
-                <li><a href="{{ url('seven-reasons-for-loving-kingdom-challenge') }}">The Top 7 Reasons Why People Love The Kingdom Challenge</a></li>
-                <li><a href="{{ url('ten-benefits-of-a-challenge') }}">Ten benefits of a challenge</a></li>
-                <li><a href="{{ url('now-are-you-ready') }}">Now are you ready for a challenge?</a></li>
-                <li><a href="{{ url('auth/register') }}">Register now</a></li>
+                <li><a href="{{ url('100-days-challenge') }}">100 Days Challenge</a></li>
+                <li><a href="{{ url('weight-loss-management') }}">Weight Loss & Management Challenge</a></li>
+                <li><a href="{{ url('mountain-climbing') }}">Mountain Climbing Challenge</a></li>
+                <li><a href="{{ url('extreme-sports') }}">Extreme Sports Challenge</a></li>
+                <li><a href="{{ url('self-discovery') }}">Self-Discovery Challenge</a></li>
+                <li><a href="{{ url('business-startup') }}">Business Start Up Challenge</a></li>
+                <li><a href="{{ url('business-breakthrough') }}">Business Breakthrough Challenge</a></li>
+                <li><a href="{{ url('savings') }}">Savings and Investments Challenge</a></li>
+                <li><a href="{{ url('mentorship') }}">Mentorship and Apprentice Challenge</a></li>
             </ol>
-
-            <div><h3>Calendar</h3></div>
-            <div id="calendar"></div>
-
         </div>
-
     </div>
 </div>
 
