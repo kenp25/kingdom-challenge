@@ -8,22 +8,26 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Kingdom Challenge') }}</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 </head>
 <body background=""text="blue" Alink="purple"link="red"vlink="green">
-<div class="container" style="background-color:brown;">
-<header id="header">
+<header id="header" class="container-fluid" style="background-color: rgba(165, 42, 42, 0.7)">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-2">
                 <img class="img img-responsive" src="{{ asset('img/logo-4.png') }}" alt="Header">
             </div>
 
+            <div class="col-md-8">
+                <div><h3>KINGDOM CHALLENGE</h3></div>
+                <span>To Inspire, Promote and Celebrate Success</span>
+            </div>
         </div>
     </div>
 
@@ -174,36 +178,47 @@
                             </ul>
                         </li>
 
-
                     </ul>
 
                 </div>
             </div>
         </nav>
-    @endif
-    <nav class="navbar navbar-default navbar-static-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
+    @else
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
 
-                <!-- Collapsed Hamburger -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#app-navbar-collapse">
-                    <span class="sr-only">Toggle Navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+                    <!-- Collapsed Hamburger -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#app-navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="nav navbar-nav">
+                        &nbsp;
+                    </ul>
+
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="{{ url('/') }}">Home</a></li>
+                        <li class="active"><a href="{{ url('about') }}">About Us</a></li>
+                        <li class="active"><a href="{{ url('auth/register') }}">Register</a></li>
+                        <li class="active"><a href="{{ 'auth/login' }}">Login</a></li>
+                    </ul>
+
+                </div>
+
+
+
             </div>
+        </nav>
 
-            <ul class="nav navbar-nav nav-pills">
-                <li class="active"><a href="{{ url('/') }}">Home</a></li>
-                <li class="active"><a href="{{ url('about') }}">About Us</a></li>
-                <li class="active"><a href="{{ url('auth/register') }}">Register</a></li>
-                <li class="active"><a href="{{ 'auth/login' }}">Login</a></li>
-            </ul>
-
-        </div>
-    </nav>
+    @endif
 
     @yield('content')
 </div>

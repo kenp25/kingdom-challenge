@@ -12,8 +12,21 @@
                 <li><a href="{{ url('auth/register') }}">Register now</a></li>
             </ol>
 
+            <h3>Challenge Types</h3>
+            <ol>
+                <li><a href="{{ url('100-days-challenge') }}">100 Days Challenge</a></li>
+                <li><a href="{{ url('weight-loss-management') }}">Weight Loss & Management Challenge</a></li>
+                <li><a href="{{ url('mountain-climbing') }}">Mountain Climbing Challenge</a></li>
+                <li><a href="{{ url('extreme-sports') }}">Extreme Sports Challenge</a></li>
+                <li><a href="{{ url('self-discovery') }}">Self-Discovery Challenge</a></li>
+                <li><a href="{{ url('business-startup') }}">Business Start Up Challenge</a></li>
+                <li><a href="{{ url('business-breakthrough') }}">Business Breakthrough Challenge</a></li>
+                <li><a href="{{ url('savings') }}">Savings and Investments Challenge</a></li>
+                <li><a href="{{ url('mentorship') }}">Mentorship and Apprentice Challenge</a></li>
+            </ol>
+
         </div>
-        <div class="col-md-6">
+        <div class="col-md-9">
             <ul class="cb-slideshow slider">
                 <li>
                     <span>Image 01</span><div><h2>Unleash Your</h2><h3>Awesomeness</h3></div>
@@ -71,19 +84,7 @@
                 </li>
             </ul>
         </div>
-        <div class="col-md-3">
-            <ol>
-                <li><a href="{{ url('100-days-challenge') }}">100 Days Challenge</a></li>
-                <li><a href="{{ url('weight-loss-management') }}">Weight Loss & Management Challenge</a></li>
-                <li><a href="{{ url('mountain-climbing') }}">Mountain Climbing Challenge</a></li>
-                <li><a href="{{ url('extreme-sports') }}">Extreme Sports Challenge</a></li>
-                <li><a href="{{ url('self-discovery') }}">Self-Discovery Challenge</a></li>
-                <li><a href="{{ url('business-startup') }}">Business Start Up Challenge</a></li>
-                <li><a href="{{ url('business-breakthrough') }}">Business Breakthrough Challenge</a></li>
-                <li><a href="{{ url('savings') }}">Savings and Investments Challenge</a></li>
-                <li><a href="{{ url('mentorship') }}">Mentorship and Apprentice Challenge</a></li>
-            </ol>
-        </div>
+
     </div>
 </div>
 
