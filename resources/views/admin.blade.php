@@ -28,6 +28,7 @@
                                             <td>Verified</td>
                                             <td>Address</td>
                                             <td>Phone</td>
+                                            <td>Registered On</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -45,6 +46,7 @@
                                                     <td>{{$user->verified}}</td>
                                                     <td>{{$user->address}}</td>
                                                     <td>{{$user->phone}}</td>
+                                                    <td>{{ $user->created_at->format('d/m/Y') }}</td>
                                                     <td><a href="{{ url('admin/user/edit', $user->id) }}">Edit</a></td>
                                                 </tr>
 
